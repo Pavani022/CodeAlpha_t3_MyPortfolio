@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Naidu Pavani - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+   <!-- Header Section -->
+   <header class="header">
+    <div class="header-container">
+        <h1 class="name animate__animated animate__backInDown" >Naidu Pavani</h1>
+        <nav class="navbar animate__animated animate__bounce">
+            <ul>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scrollTopBtn" onclick="scrollToTop()">▲</button>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container1">
+            <div class="about-content animate__animated animate__backInLeft ">
+                <img src="My-Pic.jpeg" alt="Your Name" class="about-img">
+            </div>
+            <div class="about-content animate__animated animate__backInRight">
+                <h2>About Me</h2>
+                <p>I am a passionate front-end developer with experience in HTML5, CSS3, JavaScript, and Bootstrap. I strive to build visually appealing and user-friendly web applications.</p>
+                <p>With hands-on experience in several projects, I am eager to apply my skills in professional environments.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="container">
+            <div class="project-item" >
+                <h3>Ecommerce Shoe Store Website</h3>
+                <p>Developed a dynamic and responsive e-commerce website showcasing men's, women's, and children's footwear.</p>
+                <button onclick="showProjectDetails('project1')">View Details</button>
+            </div>
+            <div class="project-item ">
+                <h3>Recipe Finder Web Application</h3>
+                <p>Built a recipe search app integrated with TheMealDB API, featuring clean UI and real-time data fetching.</p>
+                <button onclick="showProjectDetails('project2')">View Details</button>
+            </div>
+            <div class="project-item ">
+                <h3>Interactive Weather Application</h3>
+                <p>Created a weather app using React and Bootstrap that fetches real-time weather data from OpenWeatherMap API.</p>
+                <button onclick="showProjectDetails('project3')">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Bootstrap 5</li>
+                <li>JQuery</li>
+                <li>AJAX</li>
+                <li>MongoDB</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--Certification Section-->
+    <section id="certificates" class="certificates">
+        <h2>Certificates</h2>
+        <div class="container">
+            <div class="certify">
+                <h3>Greate Learning</h3>
+                <p>Successfully completed Frontend Development-HTML5 course on Greate Learning &nbsp;&nbsp;
+                    <a href="frontEnd_certificate.jpg" target="_blank">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </p>
+               
+            </div>
+            <div class="certify">
+                <h3>Greate Learning</h3>
+                <p>Successfully completed Introduction to JavaScript course on Greate Learning  &nbsp;&nbsp;
+                    <a href="IntroJavascript_Certificate.jpg" target="_blank">
+                    <i class="fa-solid fa-link"></i>
+                     </a> 
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:pavaninaidu022@gmail.com">pavaninaidu022@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/pavaninaidu-rv99765974" target="_blank">linkedin.com/in/pavaninaidu</a></p>
+        </div>
+    </section>
+
+     <footer class="footer">
+        <p>© 2024 Naidu Pavani. All rights reserved.</p>
+    </footer> 
+
+    <!-- Project Details Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Interactions -->
+    <script src="script.js"></script>
+</body>
+</html>
